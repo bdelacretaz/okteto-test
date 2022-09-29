@@ -1,0 +1,17 @@
+{
+  "name": "node-api-okteto",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ng-the-engineer/node-api-okteto.git",
+  "author": "Anthony Ng <engineer.anthony.ng@gmail.com>",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

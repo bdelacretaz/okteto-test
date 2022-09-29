@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bd-k8s-test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: bd-k8s-test
+  template:
+    metadata:
+      labels:
+        name: bd-k8s-test
+    spec:
+      containers:
+        - name: bd-k8s-test
+          image: okteto.dev/bd-k8s-test:latest
+          ports:
+            - containerPort: 8080

@@ -1,0 +1,2 @@
+This is some data to check that the remote
+deployment has access to such files.
