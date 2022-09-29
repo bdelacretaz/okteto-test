@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: bd-k8s-test
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       name: bd-k8s-test

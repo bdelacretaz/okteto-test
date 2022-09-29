@@ -5,12 +5,15 @@ const fs = require("fs");
 const path = require("path");
 const port = 8080;
 const loadTime = new Date();
+const version = 4;
 
 app.get("/", (_req, res) => {
   res.send({
+    version,
     name: os.hostname(),
     type: os.type(),
     uptime: os.uptime(),
+    platform: os.platform(),
     loadTime
   })
 });
